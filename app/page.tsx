@@ -2,7 +2,7 @@ import { BackgroundLines } from "@/components/background/background";
 import React from "react";
 import NavbarComp from "@/components/navbar/navBarComp";
 import { TracingBeamDemo } from "@/components/beem/demo";
-import { InfiniteMovingCardsDemo } from "@/components/testimonials/demo";
+// import { InfiniteMovingCardsDemo } from "@/components/testimonials/demo";
 import FeaturesSection from "@/components/description/descript";
 export default function Page() {
   return (
