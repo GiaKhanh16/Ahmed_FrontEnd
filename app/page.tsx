@@ -1,8 +1,9 @@
 import { BackgroundLines } from "@/components/background/background";
 import React from "react";
-import NavbarComp from "./nav/page";
+import NavbarComp from "@/components/navbar/navBarComp";
 import { TracingBeamDemo } from "@/components/beem/demo";
-
+import { InfiniteMovingCardsDemo } from "@/components/testimonials/demo";
+import FeaturesSection from "@/components/description/descript";
 export default function Page() {
   return (
     <div>
@@ -12,20 +13,23 @@ export default function Page() {
           <NavbarComp />
         </div>
 
-        {/* Center this part in the remaining space */}
-        <div className="flex-grow flex items-center justify-center pb-50">
+        {/* Center Part */}
+        <div className="flex-1 flex flex-col items-center justify-center md:gap-45 lg:gap-45">
           <div className="text-center">
-            <h2 className="bg-clip-text text-transparent bg-gradient-to-b from-neutral-900 to-neutral-700 dark:from-neutral-600 dark:to-white text-2xl md:text-4xl lg:text-7xl font-sans py-2 md:py-10 relative z-20 font-bold tracking-tight">
+            <h2 className="bg-clip-text text-transparent bg-gradient-to-b from-neutral-900 to-neutral-700 dark:from-neutral-600 dark:to-white  md:text-4xl lg:text-7xl font-sans md:py-5 relative z-20 font-bold tracking-tight text-6xl pb-3">
               Admed Ali, <br /> Digital Orbit.
             </h2>
             <p className="max-w-xl mx-auto text-sm md:text-lg text-neutral-700 dark:text-neutral-400">
-              Get the best advices from our experts, including expert artists,
-              painters, marathon enthusiasts and RDX, totally free.
+              Full service digital branding for your business.
             </p>
           </div>
+          <FeaturesSection />
         </div>
       </BackgroundLines>
-      <TracingBeamDemo/>
+      <TracingBeamDemo />
     </div>
   );
 }
+
+// Get the best advices from our experts, including expert artists,
+// painters, marathon enthusiasts and RDX, totally free.
