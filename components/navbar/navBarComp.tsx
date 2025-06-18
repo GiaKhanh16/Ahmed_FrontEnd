@@ -11,6 +11,7 @@ import {
   MobileNavMenu,
 } from "@/components/navbar/navbar";
 import { useState } from "react";
+import Link from "next/link";
 
 export default function NavbarComp() {
   const navItems = [
@@ -38,7 +39,9 @@ export default function NavbarComp() {
           <NavbarLogo />
           <NavItems items={navItems} />
           <div className="flex items-center gap-4">
-            <NavbarButton variant="secondary">Login</NavbarButton>
+            <Link href="/Auth">
+              <NavbarButton variant="secondary">Login</NavbarButton>
+            </Link>
             <NavbarButton variant="primary">Book a call</NavbarButton>
           </div>
         </NavBody>
